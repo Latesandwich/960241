@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <header>
+        <h1>หน้า Login</h1>
+    </header>
+    
+    <main>
+        <form action="/sendLogin" method="POST">
+            <label for="username">Email:</label>
+            <input type="email" id="username" name="username" placeholder="username" required>
+            <br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="password" required>
+            <br><br>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <br>
+        <a href="signin.html">Sign In</a>
+    </main>
+
+    <footer style="margin-top: 50px; font-size: 0.9em; color: gray;">
+        <hr>
+        <p>อยู่ camt มช</p>
+        <p>College of Arts, Media and Technology</p>
+        <p>Chiang Mai University</p>
+    </footer>
+</body>
+</html>

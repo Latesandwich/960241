@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box1 {
+background-color: lightblue;
+color: navy;
+padding: 20px;
+border-radius: 10px;
+}
+.row {
+    display: flex;
+    gap: 20px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+.red { background-color: red; }
+.blue { background-color: blue; }
+.green { background-color: green; }
+.btn {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: black;
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* เต็มหน้าจอ */
+    background-color: #f0f0f0;
+}
+.center-box {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+.grid-center {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.wrapper {
+    position: relative;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+</style>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <p style="color: red; font-size: 20px;">นี่คือข้อความสีแดง ขนาด 20px</p>
+        <div class="box1">
+            กล่องนี้มีพื้นหลังสีฟ้า และข้อความสีน ้าเงิน
+        </div>
+        <h1>ยินดีต้อนรับ!</h1>
+        <div class="row">
+            <div class="box red"></div>
+            <div class="box blue"></div>
+            <div class="box green"></div>
+    </div>
+    <button class="btn">คลิก me bro</button>
+    <div class="center-container">
+        <div class="center-box">Centered!</div>
+    </div>
+    <div class="grid-center">
+        <div class="center-box">Centered!</div>
+    </div>
+    <div class="wrapper">
+        <div class="absolute-center">Centered!</div>
+    </div>
+</body>
+</html>

@@ -3,43 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>หน้า Sign In</h1>
-    </header>
-    
-    <main>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-sm p-6">
+
+        <div class="flex justify-center mb-4">
+            <img src="https://upload.wikimedia.org/wikipedia/th/thumb/1/18/Chiang_Mai_University.svg/200px-Chiang_Mai_University.svg.png" alt="CMU Logo" class="h-24">
+        </div>
+
+        <div class="flex justify-center gap-2 mb-4">
+            <a href="test2.html" class="bg-blue-400 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-500">Home</a>
+            <a href="login.html" class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-600">Login</a>
+        </div>
+
+        <h1 class="text-2xl font-bold text-center mb-4">หน้า Sign In</h1>
+
         <form action="#" method="POST">
-            <label for="fname">ชื่อ:</label>
-            <input type="text" id="fname" name="fname" required>
-            <br><br>
+            <label class="block text-lg font-semibold text-center mb-2">ชื่อ</label>
+            <input type="text" id="fname" name="fname" placeholder="ชื่อ" required class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
 
-            <label for="lname">สกุล:</label>
-            <input type="text" id="lname" name="lname" required>
-            <br><br>
+            <label class="block text-lg font-semibold text-center mb-2">สกุล</label>
+            <input type="text" id="lname" name="lname" placeholder="สกุล" required class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br><br>
-            
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+            <label class="block text-lg font-semibold text-center mb-2">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+            <label class="block text-lg font-semibold text-center mb-2">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+            <div class="flex items-center gap-4 mb-6">
+                <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Submit</button>
+                <button type="reset" class="bg-gray-300 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-400">Reset</button>
+            </div>
         </form>
-        <br>
-        <a href="login.html">กลับไปหน้า login</a>
-    </main>
 
-    <footer style="margin-top: 50px; font-size: 0.9em; color: gray;">
-        <hr>
-        <p>อยู่ camt มช</p>
-        <p>College of Arts, Media and Technology</p>
-        <p>Chiang Mai University</p>
-    </footer>
+        <div class="text-center">
+            <a href="login.html" class="text-blue-500 hover:underline">กลับไปหน้า login</a>
+        </div>
+
+        <div class="text-center text-gray-500 text-sm mt-4">
+            <p>page footer</p>
+            <p>ที่อยู่ camt มช</p>
+        </div>
+    </div>
+
 </body>
 </html>

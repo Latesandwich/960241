@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>หน้า Login</h1>
-    </header>
-    
-    <main>
-        <form action="/sendLogin" method="POST">
-            <label for="username">Email:</label>
-            <input type="email" id="username" name="username" placeholder="username" required>
-            <br><br>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="password" required>
-            <br><br>
-            
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </form>
-        <br>
-        <a href="signin.html">Sign In</a>
-    </main>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
 
-    <footer style="margin-top: 50px; font-size: 0.9em; color: gray;">
-        <hr>
-        <p>อยู่ camt มช</p>
-        <p>College of Arts, Media and Technology</p>
-        <p>Chiang Mai University</p>
-    </footer>
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-sm p-6">
+
+        <div class="flex justify-center mb-4">
+            <img src="https://upload.wikimedia.org/wikipedia/th/thumb/1/18/Chiang_Mai_University.svg/200px-Chiang_Mai_University.svg.png" alt="CMU Logo" class="h-24">
+        </div>
+
+        <div class="flex justify-center gap-2 mb-4">
+            <a href="test2.html" class="bg-blue-400 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-500">Home</a>
+            <a href="login.html" class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-600">Login</a>
+        </div>
+
+        <h1 class="text-2xl font-bold text-center mb-1">หน้า Login</h1>
+
+        <form action="/sendLogin" method="POST">
+            <label class="block text-lg font-semibold text-center mb-2">username</label>
+            <input type="email" id="username" name="username" placeholder="Email" required class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+            <label class="block text-lg font-semibold text-center mb-2">password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+            <div class="flex items-center gap-4 mb-6">
+                <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Login</button>
+                <a href="signin.html" class="text-blue-500 hover:underline">Sign In</a>
+            </div>
+        </form>
+
+        <div class="text-center text-gray-500 text-sm">
+            <p>page footer</p>
+            <p>ที่อยู่ camt มช</p>
+        </div>
+    </div>
+
 </body>
 </html>
